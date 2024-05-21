@@ -101,7 +101,7 @@ import("https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0")
             let vectorHombroCodo = new Vector(puntHombr, puntcodo);
             let vectorMuñecaCodo = new Vector(puntMuñeca, puntcodo);
             let angulomuñecaCodo = vectorHombroCodo.anguloConrespectoA(vectorMuñecaCodo);
-            console.log(angulomuñecaCodo);
+            //console.log(angulomuñecaCodo);
             //Punto(landmarkR[])
 
         }
@@ -187,7 +187,11 @@ import("https://cdn.skypack.dev/@mediapipe/tasks-vision@0.10.0")
                     let vectorHomCadera=new Vector(puntHombr,puntCader);
                     let angulomuñecaCodo = vectorHombroCodo.anguloConrespectoA(vectorMuñecaCodo);
                     let angulohombroCadera=vectorHombroCodo.anguloConrespectoA(vectorHomCadera);
-                    console.log(angulomuñecaCodo);
+                    //console.log(angulomuñecaCodo);
+                    //if(angulomuñecaCodo<=20){
+                        //document.write(angulomuñecaCodo);
+                        document.getElementById("dato").innerHTML=angulomuñecaCodo;
+                    //}
                     }catch(error){
                         
                     }
